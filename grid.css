@@ -1,0 +1,67 @@
+.item{
+    background-color: yellow;
+    border: 2px black solid;
+}
+#container{
+    width: 95vw;
+    height: 60vh;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    outline: 8px solid #4838d4;
+    display: grid;
+    text-align: center;
+    /*grid auto rows, grid auto columns, 1fr, repeat, minmax*/
+    /*grid-gap:20[row] 30[column];*/
+    /*Align items:stretch, start, end, center[within the cell*/
+    /*justify items:start, end, center, stretch*/
+    /*place- items of align and justify items: center stretch;*/
+    /*align ccontent: center, start, end, space between, space around, space evenly(vertically) 
+    justify content:center space between, its the same thing but horizontally*/
+
+grid-template-columns: [col-start] 1fr [col-2] 1fr [col-3] 1fr [col-end];
+/*grid-template-rows: 100px 50px;
+grid-auto-rows: 50px 25px;
+grid-auto-flow: row;
+grid-column-gap: 10px;
+grid-row-gap: 10px;
+}
+grid-template-columns: [col- start] 1fr [col-2] 1fr [col-3] 1fr [col-end] ;
+/*grid-auto-rows: 60px auto 100px;
+grid-template-areas: "header header header"
+"main main Sidebar"
+"Footer Footer Footer";
+}
+.header{
+    grid-area: header;
+}
+.Sidebar{
+    grid-area: Sidebar;
+}
+.main{
+    grid-area: main;
+}
+.Footer{
+    grid-area: Footer;*/
+}
+/*grid item properties*/
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 2px 3px grey;
+    border: 1px solid #222;
+    border-radius: 8px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.one{
+    grid-column-start: 1;
+    grid-column-end: col-2;
+}
+.two{
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+/*grid-column: x/y, grid-row: x/y(start/end)*/
+/* align self, justify self, place self*/
+/*grid-area:x1/x2 y1/y2, row start/column start row end/column end
